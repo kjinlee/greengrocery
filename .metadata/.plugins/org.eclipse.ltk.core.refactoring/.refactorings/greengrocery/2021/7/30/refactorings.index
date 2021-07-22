@@ -21,3 +21,14 @@
 1626926243888	Copy packages
 1626926248181	Copy packages
 1626926272294	Delete element
+1626935706185	Delete element
+1626935750957	Rename package 'com.my.greegrocery'
+1626935763581	Rename package 'com.my.board.fruit'
+1626935840428	Rename package 'com.my.board'
+1626935853379	Rename package 'com.my.shop.greengrocery'
+1626935891950	Copy package
+1626935917136	Copy packages
+1626935931723	Rename type 'FruitController'
+1626935936665	Rename type 'Fruit'
+1626936879426	Move compilation unit
+1626936904683	Move compilation unit

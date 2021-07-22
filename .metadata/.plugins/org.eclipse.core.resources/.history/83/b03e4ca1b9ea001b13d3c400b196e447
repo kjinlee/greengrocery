@@ -1,0 +1,5 @@
+package com.my.shop.fruit.controller;
+
+public class Message {
+
+}
