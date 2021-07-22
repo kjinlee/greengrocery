@@ -1,0 +1,25 @@
+package com.example.fruit.controller;
+
+import java.util.Map;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.fruit.model.Fruit;
+
+@RestController
+public class FruitController {
+	
+	private Map<String, Fruit> fruitMap;
+	
+	
+	@PostConstruct
+	public void init() {
+		fruitMap = new Map<String, Fruit>();
+		fruitMap.put("1", new Fruit("1" , "과일", "사과", "5000"));
+	}
+	
+	
+	
+}

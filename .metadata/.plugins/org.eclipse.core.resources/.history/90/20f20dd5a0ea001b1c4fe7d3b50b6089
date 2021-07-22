@@ -1,0 +1,5 @@
+package com.my.greegrocery.vegetable.controller;
+
+public class VegetableController {
+
+}

@@ -1,0 +1,43 @@
+package com.my.greegrocery.vegetable.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.my.greegrocery.vegetable.model.Vegetable;
+
+@RestController
+public class VegetableController {
+	
+	private Map<String, Vegetable> fruitMap;
+	
+	@PostConstruct
+	public void init() {
+		fruitMap = new HashMap<String, Vegetable>();
+		fruitMap.put("1", new Vegetable("1", "과일", "사과", "5000원"));
+		fruitMap.put("2", new Vegetable("2", "과일", "배", "7000원"));
+		fruitMap.put("3", new Vegetable("3", "과일", "자두", "3000원"));
+		fruitMap.put("4", new Vegetable("4", "과일", "수박", "10000원"));
+		fruitMap.put("5", new Vegetable("5", "과일", "망고", "20000원"));
+	}
+	
+	@GetMapping("/fruit/{id}")
+	public Fruit getFruit(@PathVariable("id") String id) {
+		return fruitMap.get(id);
+	}
+	
+	
+	@GetMapping("/fruit/all")
+	public List<Fruit> getFruitList(){
+		return new ArrayList<Fruit>(fruitMap.values());
+	}
+	
+
+}

@@ -1,0 +1,5 @@
+package com.example.fruit.model;
+
+public class Fruit {
+
+}

@@ -1,0 +1,8 @@
+package com.example.fruit.model;
+
+public class Vegetable {
+	private String id;
+	private String category;
+	private String fruitName;
+	private String price;
+}

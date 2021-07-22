@@ -1,0 +1,43 @@
+package com.example.greengrocery.fruit;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.fruit.model.Fruit;
+
+@RestController
+public class FruitController {
+	
+	private Map<String, Fruit> fruitMap;
+	
+	
+	@PostConstruct
+	public void init() {
+		fruitMap = new HashMap<String, Fruit>();
+		fruitMap.put("1", new Fruit("1" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("2" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("3" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("4" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("5" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("6" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("8" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("9" , "과일", "사과", "5000"));
+		fruitMap.put("1", new Fruit("10" , "과일", "사과", "5000"));
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+

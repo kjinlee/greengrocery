@@ -1,0 +1,5 @@
+package com.my.greegrocery.fruit.model;
+
+public class Fruit {
+
+}
